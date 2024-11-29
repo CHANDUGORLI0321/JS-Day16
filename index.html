@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // Task1  Sum of Numbers
+        let arr=[1,3,4,2,5]
+        let newarr=arr.reduce((count,v,i,a)=>{
+            return count+v
+        },0)
+        console.log(newarr)
+ 
+        //practice sort method
+        let arr2=[3,5,4,2,11,15,12,22,21]
+        let  newarr2=arr2.sort((a,b)=>{
+            return a-b
+        })
+        console.log(newarr2)
+
+
+       //Task2 average num
+        let num=[1,2,3,4,5]
+        let newnum=num.reduce((sum,v)=>sum+v,0)/num.length
+        console.log(newnum)
+
+
+
+
+        // Task3  Filter Adults
+
+                const people = [
+          { name: "John", age: 17 },
+          { name: "Jane", age: 22 },
+          { name: "Jim", age: 15 },
+          { name: "Jack", age: 19 }
+        ];
+        const newpeople=people.filter((v,i,a)=>{
+            return (v.age)>18
+        })
+        console.log(newpeople)
+
+
+        </script>
+    </body>
+</html>
